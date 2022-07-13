@@ -7,6 +7,12 @@ body{
     background: rgb(56,140,190);
 }
 
+.imgRodrimar{
+    display: flex;
+    justify-content: center;
+    position: cover;
+}
+
 
 #menuToggle
 {
