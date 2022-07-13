@@ -5,12 +5,15 @@
 
 body{
     background: rgb(56,140,190);
+    font-family: sans-serif;
 }
 
 .imgRodrimar{
     display: flex;
     justify-content: center;
     position: cover;
+    opacity: 0.5;
+    margin-top: 200px;
 }
 
 
@@ -35,7 +38,7 @@ user-select: none;
 
 #menuToggle a:hover
 {
-    color: tomato;
+    color: #5975ed;
 }
 
 #menuToggle input
