@@ -12,7 +12,6 @@ body{
     display: flex;
     justify-content: center;
     position: cover;
-    opacity: 0.5;
     margin-top: 200px;
 }
 
