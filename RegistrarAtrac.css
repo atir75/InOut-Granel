@@ -6,27 +6,11 @@
 body{
     background: rgb(56,140,190);
     font-family: sans-serif;
+    background-image: url(./Rodrimar\ LOGO.png);
+    background-repeat: no-repeat;
+    background-position-x: center;
 }
 
-header{
-    background-color: #29B6F6;
-}
-
-h1{
-    display: flex;
-    justify-content: center;
-}
-
-.textfield{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 0px;
-    outline: none;
-    margin-left: 100px;
-}
 
 
 #menuToggle
@@ -126,15 +110,94 @@ user-select: none;
     transform-origin: 0% 0%;
     transform: translate(-100%, 0);
     transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
+} 
 
 #menu li
 {
     padding: 10px 0;
-    font-size: 22px;
+    font-size: 18px;
 }
 
 #menuToggle input:checked ~ ul
 {
     transform: none;
+}
+
+
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  outline: none;
+  font-family: 'Roboto', sans-serif;
+}
+#formulario{
+  display: flex;
+  justify-content: center;
+}
+form[name=cadastro] {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: flex-start;
+  border-radius: 2px;
+  background-color: #ddd;
+  margin: 20px;
+  padding: 20px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.campo {
+  max-width: 300px;
+  flex-grow: 1;
+  display: flex;
+  flex-direction: column;
+  margin: 5px;
+}
+.campo input[type=text]{
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: 1px solid #ccc;
+  border-radius: 2px;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.campo label{
+  flex-basis: 100%;
+}
+#respostaTel {
+  color: red;
+  display: none;
+}
+#respostaCPF {
+  color: red;
+  display: none;
+}
+#respostaCep {
+  color: red;
+  display: none;
+}
+#respostaCNPJ {
+  color: red;
+  display: none;
+}
+input[type=submit] {
+  width: 100%;
+  background-color: #555;
+  font-family: 'Roboto', sans-serif;
+  color: white;
+  padding: 12px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  transition: .2s;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+input[type=submit]:hover {
+  background-color: #aaa;
+}
+@media only screen and (min-width: 993px) {
+  form[name=cadastro] {
+    width: 70%;
+  }
 }

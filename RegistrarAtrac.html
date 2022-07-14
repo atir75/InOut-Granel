@@ -4,9 +4,79 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./RegistrarAtrac.css">
     <title>Registro de Atracação</title>
 </head>
 <body>
-    
+    <nav class="navigation">
+        <div id="menuToggle">
+            <input type="checkbox"/>
+            <span></span>
+            <span></span>
+            <span></span>
+            <ul id="menu">
+                <a href="./page1.html"><li>Inicio</li></a><br>
+                <a href="./RegistrarAtrac.html"><li>Registrar Atracação</li></a><br>
+                <a href="#"><li>Liberar Operação Portuária</li></a><br>
+                <a href="#"><li>Abertura de Período</li></a><br>
+                <a href="#"><li>Registrar Agendamento</li></a><br>
+                <a href="#"><li>Veículos em Operação</li></a><br>
+                <a href="#"><li>Paralisação</li></a><br>
+                <a href="#"><li>Primeira Pesagem</li></a><br>
+                <a href="#"><li>Carregamento</li></a><br>
+                <a href="#"><li>Segunda Pesagem</li></a><br>
+                <a href="#"><li>Contate a TI</li></a><br>
+                <a href="./index.html"><li>Sair</li></a>
+            </ul>
+        </div>
+    </nav>
+
+
+    <div class="container">
+        <div id="formulario">
+            <form name="cadastro" method="post">
+                <div class="campo">
+                    <label id="tel">Telefone fixo/móvel</label>
+                    <input type="text" class="telefone" pattern=".{13,14}" maxlength="14" name="Telefone" placeholder="(xx)xxxxx-xxxx" required>
+                    <label id="respostaTel" class="animated shake"></label>
+                </div>
+                <div class="campo">
+                    <label id="cpf">CPF</label>
+                    <input type="text" class="cpf" maxlength="11" name="CPF" placeholder="xxx.xxx.xxx-xx" required>
+                    <label id="respostaCPF" class="animated shake">O CPF digitado não existe</label>
+                </div>
+                <div class="campo">
+                    <label id="cnpj">CNPJ</label>
+                    <input type="text" class="cnpj" maxlength="18" name="CNPJ" placeholder="xx.xxx.xxx/xxxx-xx" required>
+                    <label id="respostaCNPJ" class="animated shake">O CNPJ digitado não existe</label>
+                </div>
+                <div class="campo">
+                    <label>Cep</label>
+                    <input name="Cep" type="text" id="cep" maxlength="9" placeholder="xxxxx-xxx" required/>
+                    <label id="respostaCep" class="animated shake"></label>
+                </div>
+                <div class="campo">
+                    <label>Rua</label>
+                    <input name="rua" type="text" id="rua" required/>
+                </div>
+                <div class="campo">
+                    <label>Bairro</label>
+                    <input name="bairro" type="text" id="bairro" required/>
+                </div>
+                <div class="campo">
+                    <label>Cidade</label>
+                    <input name="cidade" type="text" id="cidade" required/>
+                </div>
+                <div class="campo">  
+                    <label>Estado</label>
+                    <input name="uf" type="text" id="uf" required/>
+                </div>
+                <div class="campo">
+                    <label>IBGE</label>
+                    <input name="ibge" type="text" id="ibge" required/>
+                </div>
+            </form>
+            </div>
+    </div>
 </body>
 </html>
