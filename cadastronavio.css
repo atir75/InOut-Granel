@@ -6,11 +6,13 @@
 body{
     background: rgb(56,140,190);
     font-family: sans-serif;
-    height: 400px;
-    width: 100%;
-    background-image: url("./Rodrimar\ LOGO.png");
-    background-repeat: no-repeat;
-    background-position: center;
-    margin-top: 400px;
 }
 
+header{
+    background-color: #29B6F6;
+}
+
+h1{
+    display: flex;
+    justify-content: center;
+}
