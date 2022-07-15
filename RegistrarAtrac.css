@@ -12,6 +12,10 @@ body{
     font-size: 18px;
 }
 
+.container{
+    margin-top: 15px;
+}
+
 
 
 #menuToggle
@@ -236,29 +240,20 @@ input[type=submit]:hover {
 }
 
 
-
-
-
 .dataTable {
     width: 800px;
     margin: 1em 0;
     background-color: #ddd;
     margin-left: 213px;
-    margin-top: 150px;
+    margin-top: 100px;
     font-size: 18px;
 }
-
-
-
-
 
 .dataTable td, .dataTable th {
     padding: 0.85em;
     line-height: 1.5em;
     border-bottom: 1px dashed #ccc;
     box-sizing: border-box;
-    overflow-x: hidden;
-    overflow-y: auto;
 }
 
 .dataTable th {
@@ -299,9 +294,65 @@ input[type=submit]:hover {
     
 .dataTable th, .dataTable tbody td {
     display: table-cell;
+
 }
-    
-.dataTable td, .dataTable th {
-    width: auto;
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin-left: 210px;
 }
+
+.btn-1 {
+    background: rgb(43,219,122);
+background: linear-gradient(180deg, rgba(43,219,122,0.989233193277311) 11%, rgba(49,220,131,1) 18%, rgba(117,237,234,1) 96%);
+    border: none;
+}
+.btn-1:hover {
+    background: rgb(0,106,48);
+background: linear-gradient(180deg, rgba(0,106,48,0.989233193277311) 11%, rgba(117,237,234,1) 96%);
+}
+
+.custom-btn2 {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin-left: 10px;
+}
+
+.btn-2 {
+    background: rgb(198,7,40);
+background: linear-gradient(180deg, rgba(198,7,40,0.989233193277311) 11%, rgba(217,113,115,1) 96%);
+    border: none;
+}
+.btn-2:hover {
+    background: rgb(82,0,14);
+background: linear-gradient(180deg, rgba(82,0,14,0.989233193277311) 11%, rgba(198,72,74,1) 96%);
 }

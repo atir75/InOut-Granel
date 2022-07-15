@@ -1,141 +1,162 @@
-@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@1,500&family=Open+Sans:wght@400;500&family=Roboto:wght@300;400;700&display=swap');
 
-
-body {
-    margin: 0;
-    font-family: sans-serif;
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+*{
+    margin:0;
+    padding:0;
+}
+body{
+    font-family: 'Titillium Web', sans-serif;
+    background-color: #051630;
+}
+.login{
+    
 }
 
-body * {
-    box-sizing: border-box;
+.foto{
+    width: 20vh;
+    margin-left: -110px;
+    margin-top: -30px;
 }
-
-.main-login{
-    width: 100vw;
-    height: 100vh;
-    background: #1565C0;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.container{
+    display:flex;
+    overflow:hidden; 
 }
-
-.left-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+.login-left{
+    width:92%;
+    height:100vh;
+    background:#DEE4E6;
+    background-repeat: no-repeat;
+    background-size:cover;
 }
-
-.left-login > h1 {
-    font-size: 3vw;
-    color: #010bcb;
+.left-container{
+    margin-left:60px; 
 }
-
-.left-login-image{
-    width: 35vw;
+.logo-left{
+    margin-top: 20px;
 }
-
-.right-login{
-    width: 50vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.left-text p{
+    margin-top:200px;
+    width:70%;
+    color:white;
+    font-size: 40px;
 }
-
-.card-login{
-    width: 60%;
-    display: flex; 
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    padding: 30px 35px;
-    background: #2f2841;
-    border-radius: 20px;
-    box-shadow: 0px 10px 40px #00000056;
+.left-1-out{
+    margin-top:50px;
+    color:#A5A8AE;
+} 
+.left-1-out p{
+    margin-top:120px;
+    margin-left:60%;
+    font-size:12px;
+    color:#A5A8AE;
 }
-
-.card-login > h1 {
-    color: #29B6F6;
-    font-weight: 800;
-    margin: 0;
+.login-right{
+    width:58%;
+    height:100vh;
+    background:white;
 }
-
-.textfield{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: center;
-    margin: 10px 0px;
+.right-container{
+    margin-top: 150px;
 }
-
-.textfield > input{
-    width: 100%;
+.text-right{
+    margin-top: 20vh;
+}
+.label-1st{
+    margin-top:30px;
+    margin-left:53%;
+    font-size:14px
+}
+.label-1st label{
+    color:#838691;
+}
+.label-1st a{
+    text-decoration:none;
+    color:#051630;
+    
+}
+.label-1st select{
+    border:none;
+    margin-left:40px;
+}
+.login-write{
+    margin-left:150px;
+}
+.login-write h1{
+    margin-top:40px;
+    color:#333333;
+    font-weight: 600;
+    font-size:35px;
+}
+.right-input{
+    margin-top:40px;
+    width:75%;
+}
+.right-input from{
+    display: block;
+}
+.right-input from label{
+    color:#838691;
+    display: block;
+    font-size:14px;
     border: none;
-    border-radius: 10px;
-    padding: 15px;
-    background: #514869;
-    color: #f0ffffde;
-    font-size: 12pt;
-    box-shadow: 0px 10px 40px #00000056;
-    outline: none;
-    box-sizing: border-box;
 }
-
-.textfield > label {
-    color: #f0ffffde;
+.right-input from input{
+    background: #B5C2C6;
+    border:none;
+    color:#333333;
     margin-bottom: 10px;
+    margin-top:5px;
+    width:100%;
+    padding:15px 20px;
+    display: block;
+}
+.right-input from input:hover{
+    border:0.5px solid #d9d8d8;
 }
 
-.textfield > input::placeholder{
-    color: #f0ffff94;
+.right-input from input:last-child{
+    position:relative;
+    
+}
+.right-input from i{
+    position:absolute;
+    top:51%;
+    left:85%;
+    color:#333333;
+}
+.right-input from button{
+    width:100%;
+    background:#051630;
+    border:none;
+    padding:15px 0px;
+    border-radius:4px;
+    margin-top:20px;
+}
+.right-input from button:hover{
+    box-shadow:1px 1px 20px #b8b6b6;
+}
+.right-input from button a{
+    font-size:18px;
+    text-decoration:none;
+    color:white;
+}
+.right-input from p{
+    margin-left:79%;
+}
+.right-input from p a{
+    text-decoration:none;
+    color:#838691;
+    font-size:13px;
+    
 }
 
-#btn-login{
-    width: 100%;
-    padding: 16px 0px;
-    margin: 25px;
-    border: none;
-    border-radius: 8px;
-    outline: none;
-    text-transform: uppercase;
-    font-weight: 800;
-    letter-spacing: 4px;
-    color: #2b134b;
-    background: #29B6F6;
-    cursor: pointer;
-    box-shadow: 0px 10px 40px -12px #00ff8052;
+.icon{
+    width: 2vh;
 }
 
-@media only screen and (max-width: 950px){
-    .card-login{
-        width: 85%;
-    }
-}
-
-@media only screen and (max-width: 600px){
-    .main-login{
-        flex-direction: column;
-    }
-    .left-login > h1 {
-        display: none;
-    }
-    .left-login{
-        width: 100%;
-        height: auto;
-    }
-    .right-login{
-        width: 100%;
-        height: auto;
-    }
-    .left-login-image{
-        width: 50vw;
-    }
-    .card-login{
-        width: 90;
-    }
-
+.direitos{
+    margin-top: 240px;
+    color:#051630;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: 12px;
 }

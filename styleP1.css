@@ -5,7 +5,7 @@
 
 body{
     background: rgb(56,140,190);
-    font-family: sans-serif;
+    font-family: Open Sans,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
 .imgRodrimar{
@@ -37,7 +37,7 @@ user-select: none;
 
 #menuToggle a:hover
 {
-    color: #5975ed;
+    color: #C8D2D6;
 }
 
 #menuToggle input
