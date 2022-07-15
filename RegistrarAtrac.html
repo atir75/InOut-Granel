@@ -30,53 +30,145 @@
             </ul>
         </div>
     </nav>
-
-
     <div class="container">
         <div id="formulario">
             <form name="cadastro" method="post">
                 <div class="campo">
-                    <label id="tel">Telefone fixo/móvel</label>
-                    <input type="text" class="telefone" pattern=".{13,14}" maxlength="14" name="Telefone" placeholder="(xx)xxxxx-xxxx" required>
-                    <label id="respostaTel" class="animated shake"></label>
+                    <label id="text">Lloyd</label>
+                    <input type="text" class="Lloyd" maxlength="14" name="Lloyd" placeholder="xxxxxxx" required>
+                    <label id="respLloyd" class="animated shake"></label>
                 </div>
                 <div class="campo">
-                    <label id="cpf">CPF</label>
-                    <input type="text" class="cpf" maxlength="11" name="CPF" placeholder="xxx.xxx.xxx-xx" required>
-                    <label id="respostaCPF" class="animated shake">O CPF digitado não existe</label>
+                    <label id="descricao">Descrição*</label>
+                    <input type="text" class="descricao" maxlength="11" name="descricao" placeholder="xxxxxxx" required>
+                    <label id="respDescricao" class="animated shake"></label>
+                </div>
+                <select id="status">
+                    <option value="">Status</option>
+                    <option value="ativo">Ativo</option>
+                    <option value="inativo">Inativo</option>
+                </select>
+                <select id="Tipo">
+                    <option value="">Tipo</option>
+                    <option value="convencional">Convencional</option>
+                    <option value="granel">Granel</option>
+                    <option value="ho-ho">Ho-ho</option>
+                </select>
+                <div class="campo">
+                    <label>Boca</label>
+                    <input name="boca" placeholder="0 metro(s)" type="text" id="boca"/>
                 </div>
                 <div class="campo">
-                    <label id="cnpj">CNPJ</label>
-                    <input type="text" class="cnpj" maxlength="18" name="CNPJ" placeholder="xx.xxx.xxx/xxxx-xx" required>
-                    <label id="respostaCNPJ" class="animated shake">O CNPJ digitado não existe</label>
+                    <label>Loa</label>
+                    <input name="loa" placeholder="0 metro(s)" type="text" id="loa"/>
                 </div>
-                <div class="campo">
-                    <label>Cep</label>
-                    <input name="Cep" type="text" id="cep" maxlength="9" placeholder="xxxxx-xxx" required/>
-                    <label id="respostaCep" class="animated shake"></label>
-                </div>
-                <div class="campo">
-                    <label>Rua</label>
-                    <input name="rua" type="text" id="rua" required/>
-                </div>
-                <div class="campo">
-                    <label>Bairro</label>
-                    <input name="bairro" type="text" id="bairro" required/>
-                </div>
-                <div class="campo">
-                    <label>Cidade</label>
-                    <input name="cidade" type="text" id="cidade" required/>
-                </div>
-                <div class="campo">  
-                    <label>Estado</label>
-                    <input name="uf" type="text" id="uf" required/>
-                </div>
-                <div class="campo">
-                    <label>IBGE</label>
-                    <input name="ibge" type="text" id="ibge" required/>
-                </div>
+                <select id="Armador">
+                    <option value="">Armador</option>
+                    <option value="op1">op1</option>
+                    <option value="op2">op2</option>
+                    <option value="op3">op3</option>
+                </select>
+                <select id="Bandeira">
+                    <option value="">Bandeira</option>
+                    <option value="op1">op1</option>
+                    <option value="op2">op2</option>
+                    <option value="op3">op3</option>
+                </select>
             </form>
             </div>
     </div>
+
+<table class="dataTable">
+    <thead>
+        <tr>
+            <th>#</th>
+            <th>Nome</th>
+            <th>Tipo</th>
+            <th>Resist. TankTop</th>
+            <th>HC.Comprimento</th>
+            <th>HC.Largura</th>
+            <th>Deck</th>
+            <th>Resistência Deck</th>
+            <th>Width</th>
+            <th>Length</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+    </tbody>
+</table>
+
+
 </body>
 </html>

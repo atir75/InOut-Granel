@@ -9,6 +9,7 @@ body{
     background-image: url(./Rodrimar\ LOGO.png);
     background-repeat: no-repeat;
     background-position-x: center;
+    font-size: 18px;
 }
 
 
@@ -123,6 +124,53 @@ user-select: none;
     transform: none;
 }
 
+#status{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    width: 250px;
+    height: 43px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#Tipo{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    width: 255px;
+    height: 43px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#Armador{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    width: 255px;
+    height: 43px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#Bandeira{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    width: 255px;
+    height: 43px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
 
 @import url('https://fonts.googleapis.com/css?family=Roboto');
 *{
@@ -148,7 +196,7 @@ form[name=cadastro] {
   box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .campo {
-  max-width: 300px;
+  width: 200px;
   flex-grow: 1;
   display: flex;
   flex-direction: column;
@@ -164,40 +212,96 @@ form[name=cadastro] {
 .campo label{
   flex-basis: 100%;
 }
-#respostaTel {
-  color: red;
-  display: none;
-}
-#respostaCPF {
-  color: red;
-  display: none;
-}
-#respostaCep {
-  color: red;
-  display: none;
-}
-#respostaCNPJ {
-  color: red;
-  display: none;
-}
+
 input[type=submit] {
-  width: 100%;
-  background-color: #555;
-  font-family: 'Roboto', sans-serif;
-  color: white;
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: none;
-  border-radius: 2px;
-  cursor: pointer;
-  transition: .2s;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    background-color: #555;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 input[type=submit]:hover {
-  background-color: #aaa;
+    background-color: #aaa;
 }
 @media only screen and (min-width: 993px) {
-  form[name=cadastro] {
+    form[name=cadastro] {
     width: 70%;
-  }
+    }
+}
+
+
+
+
+
+.dataTable {
+    width: 800px;
+    margin: 1em 0;
+    background-color: #ddd;
+    margin-left: 213px;
+    margin-top: 150px;
+    font-size: 18px;
+}
+
+
+
+
+
+.dataTable td, .dataTable th {
+    padding: 0.85em;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #ccc;
+    box-sizing: border-box;
+    overflow-x: hidden;
+    overflow-y: auto;
+}
+
+.dataTable th {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.14);
+    border-bottom: 1px dashed #aaa;
+}
+
+.dataTable tbody tr {
+    display: table-cell;
+}
+
+.dataTable tbody td {
+    display: block;
+}
+
+.dataTable tr:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.07);
+}
+
+@media screen and (min-width: 50em) {
+
+.dataTable {
+    display: table;
+}
+    
+.dataTable thead {
+    display: table-header-group;
+}
+    
+.dataTable tbody {
+    display: table-row-group;
+}
+    
+.dataTable thead tr, .dataTable tbody tr {
+    display: table-row;
+}
+    
+.dataTable th, .dataTable tbody td {
+    display: table-cell;
+}
+    
+.dataTable td, .dataTable th {
+    width: auto;
+}
 }
