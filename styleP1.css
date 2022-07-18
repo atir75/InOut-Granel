@@ -4,7 +4,7 @@
 }
 
 body{
-    background: rgb(56,140,190);
+    background: #051630;
     font-family: Open Sans,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
 }
 
@@ -13,6 +13,7 @@ body{
     justify-content: center;
     position: cover;
     margin-top: 200px;
+    opacity: 0.4;
 }
 
 

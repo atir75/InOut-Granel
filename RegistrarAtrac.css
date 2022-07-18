@@ -4,7 +4,7 @@
 }
 
 body{
-    background: rgb(56,140,190);
+    background: #051630;
     font-family: sans-serif;
     background-image: url(./Rodrimar\ LOGO.png);
     background-repeat: no-repeat;
@@ -176,45 +176,37 @@ user-select: none;
     box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
-@import url('https://fonts.googleapis.com/css?family=Roboto');
-*{
-  margin: 0px;
-  padding: 0px;
-  box-sizing: border-box;
-  outline: none;
-  font-family: 'Roboto', sans-serif;
-}
 #formulario{
-  display: flex;
-  justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 form[name=cadastro] {
-  display: flex;
-  flex-flow: row wrap;
-  justify-content: center;
-  align-items: flex-start;
-  border-radius: 2px;
-  background-color: #ddd;
-  margin: 20px;
-  padding: 20px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 2px;
+    background-color: #ddd;
+    margin: 20px;
+    padding: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .campo {
-  width: 200px;
-  flex-grow: 1;
-  display: flex;
-  flex-direction: column;
-  margin: 5px;
+    width: 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
 }
 .campo input[type=text]{
-  padding: 12px 20px;
-  margin: 8px 0;
-  border: 1px solid #ccc;
-  border-radius: 2px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .campo label{
-  flex-basis: 100%;
+    flex-basis: 100%;
 }
 
 input[type=submit] {
@@ -247,6 +239,10 @@ input[type=submit]:hover {
     margin-left: 213px;
     margin-top: 100px;
     font-size: 18px;
+    display: flex;
+    justify-content: center;
+    background-position-x: center;
+    flex-flow: row wrap;
 }
 
 .dataTable td, .dataTable th {
@@ -355,4 +351,15 @@ background: linear-gradient(180deg, rgba(198,7,40,0.989233193277311) 11%, rgba(2
 .btn-2:hover {
     background: rgb(82,0,14);
 background: linear-gradient(180deg, rgba(82,0,14,0.989233193277311) 11%, rgba(198,72,74,1) 96%);
+}
+}
+
+.btn-3 {
+    background: rgb(43,219,122);
+background: linear-gradient(180deg, rgba(43,219,122,0.989233193277311) 11%, rgba(49,220,131,1) 18%, rgba(117,237,234,1) 96%);
+    border: none;
+}
+.btn-3:hover {
+    background: rgb(0,106,48);
+background: linear-gradient(180deg, rgba(0,106,48,0.989233193277311) 11%, rgba(117,237,234,1) 96%);
 }
