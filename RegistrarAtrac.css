@@ -180,6 +180,7 @@ user-select: none;
     display: flex;
     justify-content: center;
 }
+
 form[name=cadastro] {
     display: flex;
     flex-flow: row wrap;
@@ -230,6 +231,7 @@ input[type=submit]:hover {
     width: 70%;
     }
 }
+
 
 
 .dataTable {
@@ -329,8 +331,6 @@ background: linear-gradient(180deg, rgba(0,106,48,0.989233193277311) 11%, rgba(1
     color: #fff;
     border-radius: 5px;
     padding: 10px 25px;
-    font-family: 'Lato', sans-serif;
-    font-weight: 500;
     background: transparent;
     cursor: pointer;
     transition: all 0.3s ease;
@@ -342,6 +342,7 @@ background: linear-gradient(180deg, rgba(0,106,48,0.989233193277311) 11%, rgba(1
     outline: none;
     margin-left: 10px;
 }
+
 
 .btn-2 {
     background: rgb(198,7,40);
