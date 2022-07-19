@@ -5,8 +5,6 @@
 
 body{
     background: #051630;
-    font-family: Open Sans,HelveticaNeue,Helvetica Neue,Helvetica,Arial,sans-serif;
-    background: #051630;
     font-family: sans-serif;
     background-image: url(./Rodrimar\ LOGO.png);
     background-repeat: no-repeat;
@@ -21,6 +19,7 @@ body{
     margin-top: 200px;
     opacity: 0.4;
 }
+
 
 #menuToggle
 {
@@ -131,3 +130,70 @@ user-select: none;
 {
     transform: none;
 }
+
+.teste{
+    margin-right: 550px;
+    margin-top: -20px;
+}
+
+
+form[name=cadastro] {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: flex-start;
+    border-radius: 2px;
+    background-color: #ddd;
+    margin: 20px;
+    padding: 120px;
+    border-radius: 2px;
+    margin-left: 120px;
+    box-shadow: 0 10px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.campo {
+    width: 200px;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+    margin: 5px;
+}
+.campo input[type=text]{
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+.campo label{
+    flex-basis: 100%;
+}
+
+input[type=submit] {
+    width: 100%;
+    background-color: #555;
+    font-family: 'Roboto', sans-serif;
+    color: white;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: none;
+    border-radius: 2px;
+    cursor: pointer;
+    transition: .2s;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+input[type=submit]:hover {
+    background-color: #aaa;
+}
+@media only screen and (min-width: 993px) {
+    form[name=cadastro] {
+    width: 70%;
+    }
+}
+
+#menuToggle input:checked ~ ul
+{
+    transform: none;
+}
+
+
+
