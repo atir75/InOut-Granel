@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./veiculosoperando.css">
+    <link rel="stylesheet" href="./paralisacao.css">
     <title>Document</title>
 </head>
 <body>
@@ -19,9 +19,8 @@
                 <a href="./RegistrarAtrac.html"><li>Registrar Atracação</li></a><br>
                 <a href="#"><li>Liberar Operação Portuária</li></a><br>
                 <a href="#"><li>Abertura de Período</li></a><br>
-                <a href="#"><li>Registrar Agendamento</li></a><br>
                 <a href="./veiculosoperando.html"><li>Veículos em Operação</li></a><br>
-                <a href="#"><li>Paralisação</li></a><br>
+                <a href="./paralisacao.html"><li>Paralisação</li></a><br>
                 <a href="#"><li>Primeira Pesagem</li></a><br>
                 <a href="#"><li>Carregamento</li></a><br>
                 <a href="#"><li>Segunda Pesagem</li></a><br>
@@ -30,3 +29,143 @@
             </ul>
         </div>
     </nav>
+
+    <div class="container">
+        <div id="formulario">
+            <form name="cadastro" method="post">
+                <div class="campo">
+                    <label id="text">Navio</label>
+                    <select id="Tipo">
+                        <option value="" disabled selected>Selecione um navio</option>
+                        <option value="KOUROUPI">KOUROUPI</option>
+                        <option value="MEGA ZORD">MEGA ZORD</option>
+                        <option value="VITTAR KARF">VITTAR KARF</option>
+                    </select>
+                </div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                <div class="campo">
+                    <label id="text">Período</label>
+                    <select id="Tipo">
+                        <option value="" disabled selected>Selecione o período</option>
+                        <option value="">01H - 07H</option>
+                        <option value="">07H - 13H</option>
+                        <option value="">13H - 19H</option>
+                        <option value="">19H - 01H</option>
+                    </select>
+                </div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+
+                
+                    <div class="campo">
+                        <label id="text">Início da Paralisação</label><br>
+                        <input type="date" id="festa" name="festa" min="2022-07-01" max="2022-10-30" > <br>
+                        <input id="hora-cons" type="time" name="hora-cons" value="13:30">
+                    </div>
+                    <div class="campo">
+                        <label id="text">Término da Paralisação</label><br>
+                        <input type="date" id="festa" name="festa" min="2022-07-01" max="2022-10-30"> <br>
+                        <input id="hora-cons" type="time" name="hora-cons" value="13:30">
+                    </div>
+                    <div class="campo">
+                        <label id="text">Causa</label>
+                        <select id="Tipo">
+                            <option value="" disabled selected>Selecione a causa</option>
+                            <option value="">KOUROUPI</option>
+                            <option value="">MEGA ZORD</option>
+                            <option value="">VITTAR KARF</option>
+                        </select>
+                    </div>
+
+                    <div class="campo">
+                        <label id="text">Motivo</label>
+                        <select id="Tipo">
+                            <option value="" disabled selected>Especifique o motivo</option>
+                            <option value="">KOUROUPI</option>
+                            <option value="">MEGA ZORD</option>
+                            <option value="">VITTAR KARF</option>
+                        </select>
+                    </div> 
+
+                <div class="campo">
+                    <label id="text">Observação:</label>
+                    <input type="text" id="obs" class="Lloyd" maxlength="14" name="Lloyd" placeholder="Detalhamento da causa" required>
+                    <label id="respLloyd" class="animated shake"></label>
+                </div>
+
+            </form>
+            </div>
+    </div>
+    <button class="custom-btn btn-3" onclick="enviar()">Enviar PARALISAÇÃO</button>
+    <br><br><br><br>
+
+    <center><label id="text2"></label>
+        <div>
+            <script>
+            date = new Date().toLocaleDateString();
+            document.getElementById("text2").innerHTML = "Paralisações Registradas no dia " + date;
+
+            </script>
+            </div>
+    </center>
+
+    
+<table class="dataTable">
+    
+    <thead>
+        <tr>
+            <th>Navio</th>
+            <th>Início da Paralisação</th>
+            <th>Término da Paralisação</th>
+            <th>Causa</th>
+            <th>Observação</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr id="tabela">
+            <td><a href="#">KOUROUPI</a></td>
+            <td>fd</td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+        <tr>
+            <td><a href="#"></a></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            <td></td>
+            
+        </tr>
+    </tbody>
+</table>
+

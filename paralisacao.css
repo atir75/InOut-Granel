@@ -3,23 +3,18 @@
     padding: 0;
 }
 
-
 body{
-    background: #051630;
+    background: #092044;
     font-family: sans-serif;
     background-repeat: no-repeat;
     background-position-x: center;
     font-size: 18px;
 }
 
-
-.imgRodrimar{
-    display: flex;
-    justify-content: center;
-    position: cover;
-    margin-top: 200px;
-    opacity: 0.4;
+.container{
+    margin-top: 15px;
 }
+
 
 
 #menuToggle
@@ -43,7 +38,7 @@ user-select: none;
 
 #menuToggle a:hover
 {
-    color: #C8D2D6;
+    color: #5975ed;
 }
 
 #menuToggle input
@@ -132,13 +127,58 @@ user-select: none;
     transform: none;
 }
 
-.teste{
-    margin-left: -30px;
-    margin-top: -30px;
-    font-size: 10px;
-    height: 100px;
+#status{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    width: 250px;
+    height: 43px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
+#Tipo{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    width: 255px;
+    height: 43px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#Armador{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    width: 255px;
+    height: 43px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#Bandeira{
+    display: flex;
+    justify-content: center;
+    margin-top: 33px;
+    width: 255px;
+    height: 43px;
+    margin-right: 10px;
+    margin-left: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+}
+
+#formulario{
+    display: flex;
+    justify-content: center;
+}
 
 form[name=cadastro] {
     display: flex;
@@ -148,10 +188,8 @@ form[name=cadastro] {
     border-radius: 2px;
     background-color: #ddd;
     margin: 20px;
-    padding: 70px;
-    border-radius: 2px;
-    margin-left: 120px;
-    box-shadow: 0 10px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
+    padding: 20px;
+    box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 .campo {
     width: 200px;
@@ -193,7 +231,97 @@ input[type=submit]:hover {
     }
 }
 
-#menuToggle input:checked ~ ul
-{
-    transform: none;
+
+
+.dataTable {
+    width: 800px;
+    margin: 1em 0;
+    background-color: #ddd;
+    margin-left: 313px;
+    margin-top: 100px;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    background-position-x: center;
+    flex-flow: row wrap;
+}
+
+.dataTable td, .dataTable th {
+    padding: 0.85em;
+    line-height: 1.5em;
+    border-bottom: 1px dashed #ccc;
+    box-sizing: border-box;
+}
+
+.dataTable th {
+    text-align: center;
+    background: rgba(0, 0, 0, 0.14);
+    border-bottom: 1px dashed #aaa;
+}
+
+.dataTable tbody tr {
+    display: table-cell;
+}
+
+.dataTable tbody td {
+    display: block;
+}
+
+.dataTable tr:nth-child(odd) {
+    background: rgba(0, 0, 0, 0.07);
+}
+
+@media screen and (min-width: 50em) {
+
+.dataTable {
+    display: table;
+}
+    
+.dataTable thead {
+    display: table-header-group;
+}
+    
+.dataTable tbody {
+    display: table-row-group;
+}
+    
+.dataTable thead tr, .dataTable tbody tr {
+    display: table-row;
+}
+    
+.dataTable th, .dataTable tbody td {
+    display: table-cell;
+
+}
+
+
+.custom-btn {
+    width: 130px;
+    height: 40px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 25px;
+    font-family: 'Lato', sans-serif;
+    font-weight: 500;
+    background: transparent;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    position: relative;
+    display: inline-block;
+        box-shadow:inset 2px 2px 2px 0px rgba(255,255,255,.5),
+        7px 7px 20px 0px rgba(0,0,0,.1),
+        4px 4px 5px 0px rgba(0,0,0,.1);
+    outline: none;
+    margin-left: 210px;
+}
+.btn-3 {
+    background: rgb(43,219,122);
+background: linear-gradient(180deg, rgba(43,219,122,0.989233193277311) 11%, rgba(49,220,131,1) 18%, rgba(117,237,234,1) 96%);
+    border: none;
+}
+.btn-3:hover {
+    background: rgb(0,106,48);
+background: linear-gradient(180deg, rgba(0,106,48,0.989233193277311) 11%, rgba(117,237,234,1) 96%);
+}
+
 }
